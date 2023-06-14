@@ -1,0 +1,432 @@
+
+@font-face {
+    font-family: "Muller";
+    src: local("MullerRegular"),
+    url(./fonts/MullerRegular.woff) format("woff");
+}
+@font-face {
+    font-family: "MullerBold";
+    src: local("MullerBold"),
+    url(./fonts/MullerBold.woff) format("woff");
+}
+body {
+    background-color: #fff;
+}
+.container {
+    max-width: 1280px;
+    display: block;
+    margin: 0 auto;
+}
+.btn {
+    font-family: "MullerBold";
+    font-size: 20px;
+    border-radius: 200px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
+.section-h {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+.nav-bar a {
+    font-family: 'Muller';
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.nav-bar {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+.balance {
+    margin-left: auto;
+    
+}
+
+.logo {
+    margin-right: 42px;
+}
+.authors {
+    margin-right: 10px;
+}
+.balance {
+    font-size: 16px !important;
+    padding: 17px 31.5px 17px 31.5px;
+    background-color: black;
+    color: #fff !important;
+    border-radius: 32px;
+}
+.nav-bar a:hover {
+    color: #46F4DB;
+}
+.nav:focus::before {
+    content: "";
+    position: absolute;
+    width: 105%;
+    height: 50%;
+    left: -4px;
+    top: 10px;
+    border: 2px solid #57D272;
+}
+.nav-bar a:active {
+    color: #57D272;
+}
+
+.banner {
+    height: 680px;
+    width: 100%;
+    background-color: #000;
+    background-image: url("./src/stickers-header-banner.png");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+@media (max-width: 1100px){
+    .banner {
+        background-position: calc(100% + 200px);
+    }
+}
+@media (max-width: 970px){
+    .banner {
+        background-position: calc(100% + 400px);
+    }
+}
+@media (max-width: 730px){
+    .banner {
+        background-position: calc(100% + 600px);
+    }
+}
+
+
+
+
+.heading-txt {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;   
+    line-height: 84px;
+    font-size: 70px;
+}
+
+.heading-btn-1 {
+    background-image: linear-gradient(to top,
+                                    #57D272,
+                                    #46F4DB);
+    width: 176px;
+    height: 70px;
+}
+.heading-btn-2 {
+    background-image: linear-gradient(to top,
+                                    #57D272,
+                                    #46F4DB);
+    width: 247px;
+    height: 70px;
+    position: relative;
+}
+.heading-btn-2::before{
+    content: "стать автором";
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+.heading-btn-2::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    height: 62px;
+    width: 239px;
+    left: 4px;
+    top: 4px;
+    border-radius: inherit;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.heading {
+    padding-top: 110.1px;
+}
+.auction {
+    margin-top: 90px;
+}
+.h-auction{
+    margin-top: 0;
+    line-height: 72px;
+    display: block;
+    margin-bottom: 0;
+}
+.live-status {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    gap: 16px
+
+}
+.status {
+    display: block;
+    font-family: "MullerBold";
+    color: #D13130;
+    line-height: 17px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    padding-left: 26px;
+    padding-right: 15px;
+    border: 2px solid #D13130;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    position: relative;
+}
+.status::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #D13130;
+    left: 15px;
+    top: 15px;
+}
+
+.lot {
+    margin-top: 32px;
+    display: flex;
+    gap:32px;
+}
+
+.lot-pic {
+    max-width: 460px;
+    max-height: 460px;
+}
+.lot-description {
+    display: flex;
+    flex-direction: column;
+}
+.user {
+    display: flex;
+    gap:16px;
+}
+.username {
+    font-family: "MullerBold";
+
+}
+.lot-name {
+    font-family: "Muller";
+    font-size: 48px;
+    margin-top: 43px;
+    margin-bottom: 64px;
+}
+.bet {
+    display: flex;
+    gap:32px;
+    flex-wrap: wrap;
+
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    max-height: 174px;
+    max-width: 296px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 57px;
+}
+.price-txt {
+    font-family: "MullerBold";
+    font-size: 20px;   
+    margin: 0;
+    margin-bottom: 16px;
+}
+.value {
+    font-family: "MullerBold";
+    font-size: 48px;  
+    margin: 0;
+    margin-bottom: 6px;
+}
+.bucks {
+    font-family: "MullerBold";
+    font-size: 20px;
+    color: #95959D; 
+    margin: 0;  
+}
+.timer {
+    background-color: #000;
+    background-image: url("./src/watches.svg");
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 42px);
+}
+.time,
+.time span,
+.timer-txt {
+    color: #fff;
+}
+.timer-txt {
+    padding-top: 32px;
+    padding-left:32px;
+    font-family: "MullerBold";
+    font-size: 20px;   
+    margin: 0;
+}
+.time span {
+    font-family: "MullerBold";
+    font-size: 48px;  
+    line-height: 48px;
+    margin: 0;
+}
+.time {
+    display: flex;
+    gap: 26px;
+    padding-right: 197px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    border-radius: 30px;
+}
+
+.hours {
+    position: relative;
+}
+.hours::after {
+    content: "Час";
+    font-family: "MullerBold";
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top:38px;
+    left: 12px;
+}
+.mins {
+    position: relative;
+}
+.mins::after {
+    content: "Мин";
+    font-family: "MullerBold";
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top:38px;
+    left: 12px;
+}
+.sec {
+    position: relative;
+}
+.sec::after {
+    content: "Сек";
+    font-family: "MullerBold";
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top:38px;
+    left: 12px;
+}
+.make-bet {
+    margin-top: 32px;
+    padding: 25px 74px 25px 74px;
+    background-color: #46F4DB;
+    align-self: flex-start;
+}
+
+
+
+.more-auctions-h3 {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700px;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+.card {
+    width: 296px;
+    height: 342px;
+}
+.card-desc p {
+    margin: 0;
+}
+.sticker-pic {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 7px;
+}
+.card-desc {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 40px 40px;
+    padding-left: 16px;
+    gap: 12px;
+
+}
+.card-creator {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    gap: 8px;
+}
+.creator-name {
+    font-family: "MullerBold";
+    font-size: 16px;
+    color: #fff;
+
+}
+
+
+
+.sticker-name {
+    font-family: "MullerBold";
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.sticker-price {
+    font-family: "MullerBold";
+    font-size: 20px;
+    color: #46F4DB;
+
+}
+
+
+.auction-duration {
+    font-family: "MullerBold";
+    font-size: 16px;
+    color: #95959D;
+    padding-bottom: 32px;
+
+}
+.flex-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap:32px;
+}
+.more-auctions-button {
+    display: block;
+    border: 5px solid #46F4DB;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
