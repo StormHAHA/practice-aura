@@ -492,6 +492,7 @@ body {
     background-image: url("./src/form-bg.png");
     background-repeat: no-repeat;
     background-position: calc(100% - 257px);
+    margin-bottom: 90px;
 
 }
 
@@ -517,10 +518,14 @@ body {
     border-radius: 40px;
     background-color: #000;
     border: none;
+    color: #fff;
+    font-family: "Muller";
+    font-size: 20px;
+    padding-left: 32px;
+
 }
 .txt-input::placeholder {
     color: #EDEDF2;
-    padding-left: 32px;
     font-family: "Muller";
     font-size: 20px;
 }
@@ -561,17 +566,17 @@ body {
 
 }
 
-.notification-sub {
-    margin-bottom: 90px;
-}
 .become-creator {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 90px;
+    background-color: #fff;
+    background-image: url("./src/form-2-bg.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
 
 }
 .become-creator-txt {
-    max-width: 624px;
+    max-width: 608px;
 }
 .become-creator-h2 {
     line-height: 72px;
@@ -596,37 +601,204 @@ body {
     gap: 32px;
     
 }
-.img-form {
-    display: none;
-}
-.img-label {
-    display: block;
-    position: relative;
-    padding-right: 312px;
-    padding-left: 312px;
-    padding-top: 171px;
-    padding-bottom: 171px;
-    text-align: center;
-    border: none;
-}
-.img-label::before {
-    content: "Прикрепить работы (.jpeg / .png)";
-    font-family: "Muller";
-    font-size: 20px;
-    position: absolute;
-    left: 50%;
-    top:50%;
-    color: #95959D;
-    transform: translate(-50%, -50%);
-}
+
 .tg-txt {
     padding: 25px 390px 25px 32px;
     border: none;
+    border-radius: 40px;
+    font-family: "Muller";
+    font-size: 20px;
 
+}
+.tg-txt:focus {
+    outline: 2px solid #D13130;
 }
 .tg-txt::placeholder {
     font-family: 'Muller';
     font-size: 20px;
     line-height: 20px;
     color: #95959D;
+}
+
+
+
+/* image upload styling */
+.img-form {
+    opacity: 0;
+    z-index: -11;
+    overflow: hidden;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+.img-form + label {
+    content: "adasda";
+    cursor: pointer;
+    padding: 214px  156px 98px 156px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Muller";
+    color: #95959D;
+    position: relative;
+}
+
+.img-form:focus + label::after,
+.img-form:hover + label::after {
+    content: url("./src/+.svg");
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border: 2px solid #46F4DB;
+    border-radius: 60px;
+}
+
+
+
+
+.best-sellers {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 90px;
+}
+.best-sellers-h {
+    line-height: 72px;
+    padding-bottom: 32px;
+    padding-top: 90px;
+    margin: 0;
+}
+
+
+.best-sellers-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.bs-card {
+    display: flex;
+    background-color: white;
+    border-radius: 40px;
+    color: #000;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    gap: 16px;
+    width: 608px;
+}
+.bs-descr {
+    display: flex;
+    flex-direction: column;
+}
+.bs-user-name {
+    font-family: "MullerBold";
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+.bs-name {
+    font-family: "MullerBold";
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0;
+    margin-bottom: 13px;
+}
+.bs-price {
+    font-family: "MullerBold";
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+}
+.bs-u {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.conditions {
+    width: 100%;
+    background-color: #37373E;
+    color: #fff;
+    background-image: url("./src/conditions-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 320px);
+}
+.cond-h {
+    font-family: 'Muller';
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 22px;
+}
+.you-need {
+    list-style: none;
+    font-family: "Muller";
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    gap:31px;
+    margin: 0;
+}
+.you-need:last-child {
+    padding-bottom: 40px;
+}
+.li {
+    margin: 0;
+    position: relative;
+}
+.l1::before {
+    content: url("./src/cond-vec-1.svg");
+    position: absolute;
+    top: -8px;
+    left: -38px;
+}
+.l2::before {
+    content: url("./src/cond-vec-2.svg");
+    position: absolute;
+    top: -8px;
+    left: -38px;
+}
+
+.l3::before {
+    content: url("./src/cond-vec-3.svg");
+    position: absolute;
+    top: -8px;
+    left: -38px;
+}
+.footer {
+    width: 100%;
+    background-color: #46F4DB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.add-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin-left: auto;
+}
+.add-link {
+    color: #000;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "MullerBold";
+    text-transform:capitalize;
+}
+.flex-footer {
+    display: flex;
+}
+.aura {
+    display: block;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-family: "Muller";
+    font-size: 12px;
 }
