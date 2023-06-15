@@ -560,3 +560,73 @@ body {
     top:-2px;
 
 }
+
+.notification-sub {
+    margin-bottom: 90px;
+}
+.become-creator {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+
+}
+.become-creator-txt {
+    max-width: 624px;
+}
+.become-creator-h2 {
+    line-height: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.p1 {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.p2 {
+    font-family: "Muller";
+    line-height: 30px;
+}
+.fieldset-creator {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 32px;
+    
+}
+.img-form {
+    display: none;
+}
+.img-label {
+    display: block;
+    position: relative;
+    padding-right: 312px;
+    padding-left: 312px;
+    padding-top: 171px;
+    padding-bottom: 171px;
+    text-align: center;
+    border: none;
+}
+.img-label::before {
+    content: "Прикрепить работы (.jpeg / .png)";
+    font-family: "Muller";
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    color: #95959D;
+    transform: translate(-50%, -50%);
+}
+.tg-txt {
+    padding: 25px 390px 25px 32px;
+    border: none;
+
+}
+.tg-txt::placeholder {
+    font-family: 'Muller';
+    font-size: 20px;
+    line-height: 20px;
+    color: #95959D;
+}
