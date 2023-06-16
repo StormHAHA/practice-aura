@@ -96,17 +96,17 @@ body {
 
 @media (max-width: 1100px){
     .banner {
-        background-position: calc(100% + 200px);
+        background-position: calc(100% + 650px);
     }
 }
 @media (max-width: 970px){
     .banner {
-        background-position: calc(100% + 400px);
+        background-position: calc(100% + 600px);
     }
 }
 @media (max-width: 730px){
     .banner {
-        background-position: calc(100% + 600px);
+        background-position: calc(100% + 700px);
     }
 }
 
@@ -421,6 +421,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap:32px;
+    justify-content: center;
 }
 .more-auctions-button {
     display: block;
@@ -677,6 +678,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
 }
 .bs-card {
     display: flex;
@@ -792,6 +794,7 @@ body {
 }
 .flex-footer {
     display: flex;
+    flex-wrap: wrap;
 }
 .aura {
     display: block;
@@ -801,4 +804,132 @@ body {
     padding: 8px;
     font-family: "Muller";
     font-size: 12px;
+}
+@media (max-width:1361px) {
+    .new-stickers img {
+        height: 233px;
+        width: auto;
+    }
+    .new-stickers {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1100px){
+    .container {
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+    
+    .notification-sub {
+        background-image: url("./src/lesser-bg.png");
+        background-position: right;
+    }
+    .become-creator {
+        flex-direction: column;
+    }
+    .img-label {
+        max-width: 313px;
+    }
+    .tg-txt {
+        max-width: 202px;
+    }
+    .fieldset-creator {
+        width:624px;
+        margin-left: auto;
+    }
+    .become-creator {
+        background-image: url("./src/lesser-bg-hands.png");
+    }
+    .best-sellers-cards {
+        justify-content: center;
+    }
+    .conditions {
+        background-position: calc(100% - 36px);
+    }
+    
+}
+@media (max-width:1070px) {
+    .new-stickers img:last-child {
+        display: none;
+        
+    }
+    .new-stickers {
+        justify-content: center;
+    }
+}
+@media (max-width: 970px){
+    .lot-pic {
+        width: 296px;
+        height: 296px;
+        margin: 0 auto;
+    }
+    .lot-name {font-size: 30px;}
+    .section-h {font-size: 30px; line-height: 36px;}
+    .lot {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bet {justify-content: center;}
+    .lot-description {justify-content: center;}
+    .user, .lot-name {margin: 0 auto;}
+    .make-bet {align-self: center;}
+    .become-creator {background-image:url("./src/form-2-bg.png");
+    background-position: center center;}
+    .become-creator-txt {
+        margin-bottom: 170px;
+    }
+    .image-form {
+        margin-top: 170px;
+    }
+    .conditions { padding-bottom: 150px; background-position: bottom center;}
+}
+
+@media (max-width: 730px){
+    .image-form, .fieldset-creator {width: 260px;}
+    .img-form + label {
+        padding: 123px 24px 47px 24px;
+    }
+    .tg-txt {
+        padding-right: 32px;
+    }
+    .heading-txt {
+        font-size: 32px;
+    }
+    .txt-input {
+        width: 270px;
+    }   
+    .new-stickers img {
+        height: 130px;
+        width: auto; 
+    }
+    .become-creator {background-image: url("./src/small-bg.png");}    
+    .fieldset {
+        padding: 0;
+    }
+    .timer-txt {
+        max-width: 250px;
+    }
+    .time {
+        padding-right: 32px;
+    }
+    .timer {
+        background-image: none;
+    }
+    .bs-name {
+        font-size: 24px;
+    }
+    .bs-card {
+        padding-right: 16px;
+    }
+    .add-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .lg-fter {
+        margin: 0 auto;
+    }
+    .add-links {padding: 0;}
+    .nav-bar {
+        justify-content: center;
+    }
 }
